@@ -1,2 +1,2 @@
 # mini-redis
-A mini redis server using the rust
+A mini Redis server implementation using Rust

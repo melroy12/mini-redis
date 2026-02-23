@@ -21,10 +21,10 @@ async fn process(socket: TcpStream) {
     let mut connection = Connection::new(socket);
 
     if let Some(frame) = connection.read_frame().await.unwrap() {
-        println!("GOT: {:?}", frame);
+        println!("Received frame: {:?}", frame);
 
         // Respond with an error
-        let response = Frame::Error("unimplemented".to_string());
+        let response = Frame::Error("command not implemented yet".to_string());
         connection.write_frame(&response).await.unwrap();
     }
 }

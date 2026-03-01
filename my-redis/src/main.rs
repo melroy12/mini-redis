@@ -6,7 +6,7 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
     // Bind the listener to the address
     let listener = TcpListener::bind("127.0.0.1:6379").await?;
     
-    println!("Mini Redis server listening on 127.0.0.1:6379 🚀");
+    println!("Mini Redis server listening on 127.0.0.1:6379 ✨");
 
     loop {
         // The second item contains the IP and port of the new connection.
